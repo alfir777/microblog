@@ -1,0 +1,1 @@
+const firebaseUrl = 'https://*.firebaseio.com'

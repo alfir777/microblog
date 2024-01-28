@@ -8,7 +8,6 @@ export class NavigationComponent extends Component {
   }
 
   init() {
-    console.log('NavigationComponent init')
     this.$el.addEventListener('click', tabClickHandler.bind(this))
   }
 
@@ -18,7 +17,6 @@ export class NavigationComponent extends Component {
 }
 
 function tabClickHandler(event) {
-    console.log('tabClickHandler', event);
     event.preventDefault()
     if (event.target.classList.contains('tab')) {
         Array.from(this.$el.querySelectorAll('.tab')).forEach(tab => {
